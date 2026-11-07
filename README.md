@@ -7,9 +7,21 @@ The repository is limited to that policy and this scope note. It does not contai
 ## Page
 
 - File: `index.html`
-- Public address, once GitHub Pages is serving this repository: https://numerologynavigator.github.io/machine-patch-privacy/
-- Pages source intended for this site: branch `main`, folder `/`
+- Intended GitHub Pages address: https://numerologynavigator.github.io/machine-patch-privacy/
+- Pages source for this site: branch `main`, folder `/`
 - `.nojekyll` is present so Pages serves the HTML as static files
+
+GitHub Pages is not enabled yet. Creating the site needs repository administration (`pages: write` and `administration: write`). A call to `POST /repos/numerologynavigator/machine-patch-privacy/pages` with this repository’s publishing credentials returned HTTP 403, `Resource not accessible by integration`.
+
+Until an admin enables Pages, that address returns GitHub Pages’ own 404 page (`Page not found · GitHub Pages`). The policy file is already on public `main`.
+
+An owner with admin access on this repository can turn the site on without further file changes:
+
+1. Open https://github.com/numerologynavigator/machine-patch-privacy/settings/pages
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Set **Branch** to `main` and the folder to `/ (root)`, then save.
+
+After GitHub finishes the first build, https://numerologynavigator.github.io/machine-patch-privacy/ should return `index.html` over HTTPS with no login. Confirm the response is HTTP 200 and that the body contains “Privacy policy” and “versionCode 1” before treating the URL as live.
 
 The page adds no analytics, advertising, third-party scripts, forms, or cookies. GitHub still hosts the site and may process connection data such as IP address and server logs under the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 

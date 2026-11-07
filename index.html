@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy policy for Machine Patch by Navrang Labs, Android package com.machinepatch.game, versionCode 1, versionName 0.1.0. Effective 7 November 2026.">
+  <meta name="description" content="Privacy policy for Machine Patch by Navrang Labs, Android package com.machinepatch.game, versionCode 1 (0.1.0) and versionCode 2 (0.1.1). Effective 7 November 2026.">
   <meta name="referrer" content="no-referrer">
   <meta name="color-scheme" content="light dark">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
@@ -79,6 +79,7 @@
     }
     h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; margin: 0 0 0.6rem; }
     h2 { font-size: 1.35rem; line-height: 1.3; margin: 2rem 0 0.6rem; }
+    h3 { font-size: 1.12rem; line-height: 1.35; margin: 1.35rem 0 0.4rem; }
     p, li, dd { margin: 0.6rem 0; }
     .meta, .lede { color: var(--text); }
     .meta { font-family: "Segoe UI", system-ui, sans-serif; font-size: 1rem; }
@@ -145,16 +146,17 @@
     <header>
       <p class="kicker">Privacy policy</p>
       <h1>Machine Patch</h1>
-      <p class="lede">Navrang Labs publishes this policy for the Android game Machine Patch. It describes one build: the current closed-test version. It is not a promise about later builds.</p>
+      <p class="lede">Navrang Labs publishes this policy for the Android game Machine Patch. It covers two closed-test release builds: versionCode 1 (0.1.0) and versionCode 2 (0.1.1). Both releases handle data the same way. It is not a promise about builds after these two.</p>
       <p class="meta">Effective <time datetime="2026-11-07">7 November 2026</time></p>
     </header>
 
     <nav aria-label="On this page">
       <ul>
-        <li><a href="#build">Build covered</a></li>
+        <li><a href="#build">Builds covered</a></li>
         <li><a href="#practices">Data practices</a></li>
         <li><a href="#progress">Local progress</a></li>
         <li><a href="#ads">Advertising libraries</a></li>
+        <li><a href="#release-diff">Release differences</a></li>
         <li><a href="#future-ads">Later ads builds</a></li>
         <li><a href="#email">Support email</a></li>
         <li><a href="#age">Age</a></li>
@@ -168,7 +170,7 @@
 
     <main id="content">
       <section id="build" aria-labelledby="build-heading">
-        <h2 id="build-heading">Build covered</h2>
+        <h2 id="build-heading">Builds covered</h2>
         <dl>
           <dt>App</dt>
           <dd>Machine Patch</dd>
@@ -179,54 +181,74 @@
           <dt>Package</dt>
           <dd><code>com.machinepatch.game</code></dd>
           <dt>Distribution</dt>
-          <dd>Current closed-test build</dd>
-          <dt>versionCode</dt>
-          <dd>1</dd>
-          <dt>versionName</dt>
-          <dd>0.1.0</dd>
+          <dd>Closed-test release builds</dd>
+          <dt>versionCode 1</dt>
+          <dd>versionName 0.1.0</dd>
+          <dt>versionCode 2</dt>
+          <dd>versionName 0.1.1</dd>
+          <dt>Puzzles</dt>
+          <dd>50 in each of these releases</dd>
         </dl>
-        <p>The statements below are about this build. A different versionCode needs its own reading of this page after the page is updated to match that version.</p>
+        <p>This page describes both releases. versionCode 2 (0.1.1) is covered here together with versionCode 1 (0.1.0). A versionCode other than 1 or 2 needs this page to be updated before these sentences apply to it.</p>
       </section>
 
       <section id="practices" aria-labelledby="practices-heading">
-        <h2 id="practices-heading">Data practices in this version</h2>
-        <p>VersionCode 1 stores game progress on the device. It does not send that progress to Navrang Labs or to anyone else. It does not collect or share personal information off the device.</p>
-        <p>This version has no account or sign-in, and it does not include an analytics SDK. It has no chat, no in-app purchases, and no location sharing.</p>
+        <h2 id="practices-heading">Data practices in both releases</h2>
+        <p>versionCode 1 (0.1.0) and versionCode 2 (0.1.1) store game progress on the device. Neither release sends that progress to Navrang Labs or to anyone else. Neither release collects or shares personal information off the device.</p>
+        <p>Neither release has an account or sign-in, and neither includes an analytics SDK. Neither has chat, in-app purchases, or location sharing.</p>
+        <p>versionCode 2 does not change gameplay or these data practices. Both releases contain 50 puzzles.</p>
       </section>
 
       <section id="progress" aria-labelledby="progress-heading">
         <h2 id="progress-heading">Game progress stays on the device</h2>
         <p>Progress is stored only in the app’s local preferences, under the name <code>machine_patch</code>.</p>
         <p>Android backup is turned off for the app, and the app’s data-extraction rules exclude preferences. Progress in <code>machine_patch</code> is not included in Android backup.</p>
-        <p>Clearing the app’s storage, or uninstalling the app, removes that local progress from the device. There is no account and no separate server copy of progress in this version. This policy does not state a retention period, and it does not describe a backup service or a developer-side deletion process for game progress.</p>
+        <p>Clearing the app’s storage, or uninstalling the app, removes that local progress from the device. There is no account and no separate server copy of progress in either release. This policy does not state a retention period, and it does not describe a backup service or a developer-side deletion process for game progress.</p>
       </section>
 
       <section id="ads" aria-labelledby="ads-heading">
-        <h2 id="ads-heading">Advertising libraries in this version</h2>
+        <h2 id="ads-heading">Advertising libraries in both releases</h2>
         <div class="callout">
-          <p><strong>Current build.</strong> Google Mobile Ads and the User Messaging Platform are packaged in versionCode 1 and are inactive. This section describes that current build. It does not say that every future build will omit advertising data.</p>
+          <p><strong>Both closed-test releases.</strong> Google Mobile Ads and the User Messaging Platform are packaged in versionCode 1 and versionCode 2, and they are inactive in both releases. The production advertising path is disabled in both. This section does not say that every future build will omit advertising data.</p>
         </div>
-        <p>The app package includes the Google Mobile Ads SDK version 25.5.0 and the Google User Messaging Platform (UMP) SDK version 4.0.0. In versionCode 1, versionName 0.1.0, those libraries do not run their collection path:</p>
+        <p>Each release package includes the Google Mobile Ads SDK version 25.5.0 and the Google User Messaging Platform (UMP) SDK version 4.0.0. In both versionCode 1 (0.1.0) and versionCode 2 (0.1.1), those libraries do not run their collection path:</p>
         <ul>
           <li><code>LIVE_ADS</code> is false.</li>
-          <li>The release build sets <code>ADS_LIVE_GATE</code> to false, so ad configuration is off.</li>
-          <li>The ads startup path returns before any consent update and before <code>MobileAds.initialize</code>.</li>
+          <li>The release build sets <code>ADS_LIVE_GATE</code> to false, so ad configuration is off. Startup returns before any consent update and before <code>MobileAds.initialize</code>.</li>
           <li>The merged manifest sets <code>DELAY_APP_MEASUREMENT_INIT</code> to true, and the <code>MobileAdsInitProvider</code> component is removed.</li>
-          <li>This version does not request ads, does not read an advertising identifier, and does not transmit game progress.</li>
+          <li>Neither release requests ads, reads an advertising identifier, or transmits game progress.</li>
         </ul>
-        <p>The install manifest includes <code>com.google.android.gms.permission.AD_ID</code> and <code>android.permission.ACCESS_ADSERVICES_AD_ID</code> because the advertising SDK is packaged. This version does not use those permissions and does not read an advertising ID.</p>
+        <p>A debug build can request Google’s demo ads. This policy describes the release builds used for the closed test. Those releases do not request demo ads or any other ads.</p>
+      </section>
+
+      <section id="release-diff" aria-labelledby="release-diff-heading">
+        <h2 id="release-diff-heading">What differs between the two releases</h2>
+        <p>Data practices match. The differences are the in-app Privacy control and which permissions the release manifest declares.</p>
+        <h3>Permissions</h3>
+        <p>The versionCode 1 (0.1.0) release included four advertising permissions because the advertising SDK was packaged. The app did not use them and did not read an advertising ID:</p>
+        <ul>
+          <li><code>com.google.android.gms.permission.AD_ID</code></li>
+          <li><code>android.permission.ACCESS_ADSERVICES_AD_ID</code></li>
+          <li><code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code></li>
+          <li><code>android.permission.ACCESS_ADSERVICES_TOPICS</code></li>
+        </ul>
+        <p>The versionCode 2 (0.1.1) release removes all four of those permissions. versionCode 2 does not include the unused advertising permissions that versionCode 1 bundled.</p>
+        <p>The versionCode 2 release manifest still includes <code>android.permission.INTERNET</code> and <code>android.permission.ACCESS_NETWORK_STATE</code>. Those declarations do not change the data practices above. That release does not use them to collect or share personal information, game progress, or an advertising identifier.</p>
+        <h3>Privacy control on the Home screen</h3>
+        <p>versionCode 2 adds a Privacy control on the Home screen. It shows this policy’s address, <a href="https://numerologynavigator.github.io/machine-patch-privacy/">https://numerologynavigator.github.io/machine-patch-privacy/</a>, and the contact <a href="mailto:anandnaidu0999@gmail.com">anandnaidu0999@gmail.com</a>.</p>
+        <p>The address opens in an external browser. The contact opens with a mailto link. If the device has no application that can handle the link, the game does not replace it with an in-app browser. versionCode 2 has no in-app browser.</p>
       </section>
 
       <section id="future-ads" aria-labelledby="future-ads-heading">
         <h2 id="future-ads-heading">A later build that turns advertising on</h2>
-        <p>The following is a condition for a future build. It is not a description of collection by versionCode 1, versionName 0.1.0.</p>
-        <p>Before any build with advertising enabled is offered, this policy, the in-app consent flow, and the Google Play data disclosures have to be updated. A build with advertising enabled may collect and share identifiers, IP address, ad interactions, and diagnostics with Google. VersionCode 1 does not do that.</p>
+        <p>The following is a condition for a build after the two releases named above. It is not a description of collection by versionCode 1 (0.1.0) or versionCode 2 (0.1.1).</p>
+        <p>Before any build with advertising enabled is offered, this policy, the in-app consent flow, and the Google Play data disclosures have to be updated. A build with advertising enabled may collect and share identifiers, IP address, ad interactions, and diagnostics with Google. versionCode 1 and versionCode 2 do not do that.</p>
       </section>
 
       <section id="email" aria-labelledby="email-heading">
         <h2 id="email-heading">Email you choose to send</h2>
         <p>Privacy and support contact: <a href="mailto:anandnaidu0999@gmail.com">anandnaidu0999@gmail.com</a>.</p>
-        <p>If you send an email to that address, you choose what to include. The message contains your email address and the text you write. That information is used to read the request and to reply. The app does not send this email by itself. Support email is separate from the app’s automatic behavior, which in this version does not transmit personal information.</p>
+        <p>If you send an email to that address, you choose what to include. The message contains your email address and the text you write. That information is used to read the request and to reply. Neither release sends this email by itself. On versionCode 2, the Home screen Privacy control can open the same address with a mailto link; that still sends a message only if you choose to send one. Support email is separate from the app’s automatic behavior. These releases do not transmit personal information on their own.</p>
         <p>This policy does not set a retention period for email, and it does not describe an app backend that stores support messages.</p>
       </section>
 
@@ -234,12 +256,12 @@
         <h2 id="age-heading">Intended age</h2>
         <p>Machine Patch is intended for people aged 13 and older. That is the developer’s intended audience for this app.</p>
         <p>A store content rating such as IARC General, Everyone, or PEGI 3 is a different label. It is not this policy’s age designation, and it is not an age check inside the app.</p>
-        <p>This version does not ask for a date of birth or other age information. It has no age gate and no parental controls or other safeguards that would limit use by a younger person.</p>
+        <p>These releases do not ask for a date of birth or other age information. They have no age gate and no parental controls or other safeguards that would limit use by a younger person.</p>
       </section>
 
       <section id="controls" aria-labelledby="controls-heading">
         <h2 id="controls-heading">Controls on the device</h2>
-        <p>Game progress for this version is local. To remove it from a device:</p>
+        <p>Game progress for both releases is local. To remove it from a device:</p>
         <ul>
           <li>Open Android Settings, then Apps, then Machine Patch, then Storage, and clear storage. Some devices label this control “Clear data”.</li>
           <li>Or uninstall Machine Patch.</li>
@@ -260,8 +282,8 @@
 
       <section id="changes" aria-labelledby="changes-heading">
         <h2 id="changes-heading">Changes</h2>
-        <p>The effective date at the top of this page is the date of this text: 7 November 2026. When these practices change, this page will be updated and the effective date will change with it.</p>
-        <p>A build that collects or shares data, including a build that turns advertising on, falls outside this text until this page is updated to describe that build.</p>
+        <p>The effective date at the top of this page remains 7 November 2026. This update records versionCode 2 (0.1.1) because its release data practices match versionCode 1 (0.1.0). The date changes when those practices change.</p>
+        <p>versionCode 1 and versionCode 2 are inside this text. A different build that collects or shares data, including a build that turns advertising on, needs this page to be updated before these sentences describe that build.</p>
       </section>
 
       <section id="contact" aria-labelledby="contact-heading">
@@ -273,7 +295,7 @@
     </main>
 
     <footer>
-      <p>Machine Patch privacy policy. Effective 7 November 2026. Covers Android package <code>com.machinepatch.game</code>, versionCode 1, versionName 0.1.0.</p>
+      <p>Machine Patch privacy policy. Effective 7 November 2026. Covers Android package <code>com.machinepatch.game</code>, versionCode 1 (0.1.0) and versionCode 2 (0.1.1).</p>
     </footer>
   </div>
 </body>
